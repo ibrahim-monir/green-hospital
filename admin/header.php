@@ -1,3 +1,6 @@
+<?php 
+    require_once 'conn.php';
+?>
 <!doctype html>
 <html lang="en">
 
