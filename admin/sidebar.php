@@ -29,10 +29,17 @@
                 <li>
                     <a href="#Doctors" class="has-arrow"><i class="fa fa-user-md"></i><span>Doctors</span></a>
                     <ul>
-                        <li><a href="dr-all.html">All Doctors</a></li>
-                        <li><a href="dr-add.html">Add Doctors</a></li>
+                        <li><a href="/admin/all-doctor.php">All Doctors</a></li>
+                        <li><a href="/admin/add-doctor.php">Add Doctors</a></li>
                         <li><a href="dr-profile.html">Doctors Profile</a></li>
                         <li><a href="dr-schedule.html">Doctors Schedule</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Departments" class="has-arrow"><i class="fa fa-list"></i><span>Departments</span></a>
+                    <ul>
+                        <li><a href="/admin/departments.php">All Departments</a></li>
+                        <li><a href="/admin/add-department.php">Add Departments</a></li>
                     </ul>
                 </li>
                 <li><a href="app-calendar.html"><i class="fa fa-calendar"></i> <span>Appointment</span></a></li>
