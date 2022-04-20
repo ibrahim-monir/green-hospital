@@ -47,7 +47,7 @@
                 <li>
                     <a href="#Patients" class="has-arrow"><i class="fa fa-user-circle-o"></i><span>Patients</span></a>
                     <ul>
-                        <li><a href="patients-all.html">All Patient</a></li>
+                        <li><a href="/admin/all-patients.php">All Patient</a></li>
                         <li><a href="patients-add.html">Add Patient</a></li>
                         <li><a href="patients-profile.html">Patient Profile</a></li>
                         <li><a href="patients-invoice.html">Patient Invoices</a></li>
