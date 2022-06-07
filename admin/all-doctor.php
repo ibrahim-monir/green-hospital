@@ -58,6 +58,7 @@ require_once 'overview.php';
                                         </td>
                                         <td><?php echo $row['specialist'] ?></td>
                                         <td>
+                                            <a href="/admin/view-doctor.php?id=<?php echo $row['id']; ?>" class="btn btn-default btn-sm" title="View"><i class="fa fa-eye"></i></a>
                                             <a href="/admin/edit-doctor.php?id=<?php echo $row['id']; ?>" class="btn btn-default btn-sm" title="Edit"><i class="fa fa-pencil"></i></a>
                                             <a href="/admin/delete-doctor.php?id=<?php echo $row['id']; ?>" class="btn btn-default btn-sm" title="Delete"><i class="fa fa-trash-o"></i></a>
                                         </td>
