@@ -43,7 +43,7 @@
                     </ul>
                 </li>
                 <li><a href="app-calendar.html"><i class="fa fa-calendar"></i> <span>Appointment</span></a></li>
-                <li><a href="app-todo.html"><i class="fa fa-th-list"></i> <span>Todo List</span></a></li>
+                <!-- <li><a href="app-todo.html"><i class="fa fa-th-list"></i> <span>Todo List</span></a></li> -->
                 <li>
                     <a href="#Patients" class="has-arrow"><i class="fa fa-user-circle-o"></i><span>Patients</span></a>
                     <ul>
@@ -60,7 +60,7 @@
                         <li><a href="room-add.html">Add Allotment</a></li>
                     </ul>
                 </li>
-                <li><a href="departments.html"><i class="fa fa-table"></i><span>Departments</span></a></li>
+                <!-- <li><a href="departments.html"><i class="fa fa-table"></i><span>Departments</span></a></li> -->
                 <li>
                     <a href="#Payments" class="has-arrow"><i class="fa fa-cc-paypal"></i><span>Payments</span></a>
                     <ul>
@@ -69,7 +69,7 @@
                         <li><a href="payments-invoice.html">Invoice</a></li>
                     </ul>
                 </li>
-                <li class="header">Admin</li>
+                <!-- <li class="header">Admin</li>
                 <li><a href="app-inbox.html"><i class="fa fa-envelope"></i> <span>Email</span> <span class="badge badge-default mr-0">12</span></a></li>
                 <li><a href="app-chat.html"><i class="fa fa-comments"></i> <span>Chat</span></a></li>
                 <li><a href="our-staffs.html"><i class="fa fa-users"></i><span>Our Staffs</span></a></li>
@@ -92,7 +92,7 @@
                             <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
                         </div>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </nav>     
     </div>
