@@ -31,8 +31,7 @@
                     <ul>
                         <li><a href="/admin/all-doctor.php">All Doctors</a></li>
                         <li><a href="/admin/add-doctor.php">Add Doctors</a></li>
-                        <li><a href="dr-profile.html">Doctors Profile</a></li>
-                        <li><a href="dr-schedule.html">Doctors Schedule</a></li>
+                        <!-- <li><a href="dr-schedule.html">Doctors Schedule</a></li> -->
                     </ul>
                 </li>
                 <li>
