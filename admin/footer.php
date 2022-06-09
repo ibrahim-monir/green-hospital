@@ -5,6 +5,7 @@
 </div>
 
 <!-- Javascript -->
+<script src="../assets/js/jquery-2.2.4.min.js"></script>
 <script src="assets/bundles/libscripts.bundle.js"></script>
 <script src="assets/bundles/vendorscripts.bundle.js"></script>
 
@@ -18,5 +19,6 @@
 <!-- Project core js file minify with grunt --> 
 <script src="assets/bundles/mainscripts.bundle.js"></script>
 <script src="assets/js/index.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
