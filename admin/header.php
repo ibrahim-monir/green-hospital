@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/vendor/animate-css/vivify.min.css">
 
+<link rel="stylesheet" href="assets/vendor/dropify/css/dropify.min.css">
+<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
 <link rel="stylesheet" href="assets/vendor/chartist/css/chartist.min.css">
 <link rel="stylesheet" href="assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
 <link rel="stylesheet" href="assets/vendor/c3/c3.min.css"/>

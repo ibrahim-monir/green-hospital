@@ -15,6 +15,8 @@
 <script src="assets/bundles/apexcharts.bundle.js"></script>
 <script src="assets/bundles/jvectormap.bundle.js"></script>
 <script src="assets/vendor/toastr/toastr.js"></script>
+<script src="assets/vendor/dropify/js/dropify.min.js"></script>
+<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script><!-- bootstrap datepicker Plugin Js --> 
 
 <!-- Project core js file minify with grunt --> 
 <script src="assets/bundles/mainscripts.bundle.js"></script>
