@@ -134,7 +134,7 @@
                             </li>
                             <li><a href="javascript:void(0);" class="right_toggle icon-menu" title="Right Menu"><i class="fa fa-comments-o"></i></a></li>
                             <li class="hidden-xs"><a href="javascript:void(0);" id="btnFullscreen" class="icon-menu"><i class="fa fa-arrows-alt"></i></a></li>
-                            <li><a href="page-login.html" class="icon-menu"><i class="fa fa-power-off"></i></a></li>
+                            <li><a href="/admin/logout.php" class="icon-menu"><i class="fa fa-power-off"></i></a></li>
                         </ul>
                     </div>
                 </div>

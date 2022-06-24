@@ -1,4 +1,14 @@
-<?php require_once 'header.php'; ?>
+<?php 
+
+if( !isset( $_SESSION['login'] ) ){
+    // header( 'Location: /admin/login.php' );
+}else{
+    echo "<script>console.log('login');</script>";
+}
+
+require_once 'header.php'; 
+
+?>
     <!-- Page header section  -->
     <div class="block-header">
         <div class="row clearfix">

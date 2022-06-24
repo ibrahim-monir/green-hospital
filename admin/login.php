@@ -1,8 +1,11 @@
+<?php 
+    require_once 'conn.php';
+?>
 <!doctype html>
 <html lang="en">
 
 <head>
-<title>Mooli | Login</title>
+<title>Green Hospital | Login</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -37,14 +40,14 @@
                     <p class="lead">Login to your account</p>
                 </div>
                 <div class="body">
-                    <form class="form-auth-small" action="index.html">
+                    <form class="form-auth-small" action="auth.php" method="POST">
                         <div class="form-group c_form_group">
                             <label>Email</label>
-                            <input type="email" class="form-control" placeholder="Enter your email address">
+                            <input type="email" class="form-control" name="email" placeholder="Enter your email address">
                         </div>
                         <div class="form-group c_form_group">
                             <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Enter your password">
+                            <input type="password" class="form-control" name="password" placeholder="Enter your password">
                         </div>
                         <div class="form-group clearfix">
                             <label class="fancy-checkbox element-left">
@@ -52,7 +55,12 @@
                                 <span>Remember me</span>
                             </label>								
                         </div>
-                        <button type="submit" class="btn btn-dark btn-lg btn-block">LOGIN</button>
+                        <button type="submit" class="btn btn-dark btn-lg btn-block mb-2">LOGIN</button>
+                        <?php 
+                            if(isset($_SESSION["error"])){
+                                echo $_SESSION['error'];
+                            }
+                        ?>
                         <div class="bottom">
                             <span class="helper-text m-b-10"><i class="fa fa-lock"></i> <a href="forgot-password.php">Forgot password?</a></span>
                             <span>Don't have an account? <a href="register.php">Register</a></span>
@@ -79,3 +87,4 @@
 <!-- Vedor js file and create bundle with grunt  --> 
 </body>
 </html>
+<?php session_destroy(); ?>

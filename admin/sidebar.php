@@ -18,7 +18,7 @@
                     <li><a href="app-inbox.html"><i class="fa fa-envelope"></i>Messages</a></li>
                     <li><a href="setting.html"><i class="fa fa-gear"></i>Settings</a></li>
                     <li class="divider"></li>
-                    <li><a href="page-login.html"><i class="fa fa-power-off"></i>Logout</a></li>
+                    <li><a href="/admin/logout.php"><i class="fa fa-power-off"></i>Logout</a></li>
                 </ul>
             </div>
         </div>  
@@ -47,7 +47,7 @@
                     <a href="#Patients" class="has-arrow"><i class="fa fa-user-circle-o"></i><span>Patients</span></a>
                     <ul>
                         <li><a href="/admin/all-patients.php">All Patient</a></li>
-                        <li><a href="patients-add.html">Add Patient</a></li>
+                        <li><a href="/admin/patients-add.php">Add Patient</a></li>
                         <li><a href="patients-profile.html">Patient Profile</a></li>
                         <li><a href="patients-invoice.html">Patient Invoices</a></li>
                     </ul>
