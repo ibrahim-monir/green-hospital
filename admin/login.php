@@ -87,4 +87,3 @@
 <!-- Vedor js file and create bundle with grunt  --> 
 </body>
 </html>
-<?php session_destroy(); ?>
