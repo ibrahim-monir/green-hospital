@@ -1,5 +1,12 @@
 <?php 
     require_once 'conn.php';
+    /**
+     * page prevent from direct url access
+     */
+    session_start();
+    if( !isset( $_SESSION['login'] ) ){
+        header( 'Location: /admin/login.php' );
+    }
 ?>
 <!doctype html>
 <html lang="en">
