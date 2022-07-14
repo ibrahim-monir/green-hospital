@@ -3,6 +3,37 @@ require_once 'header.php';
 ?>
 <div class="row clearfix">
     <div class="col-12">
+        <a href="/admin/medicines-category.php?add=1" class="btn btn-success pull-right my-4">Add New</a>
+        <?php
+            if( 1 == isset( $_REQUEST['add'] ) ){
+                ?>
+                <!-- Medicine Add start here -->
+                <div class="card">
+                    <div class="body">
+                        <form action="confirm-medicines-add-category.php" method="POST">
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="name">Name</label>
+                                <div class="col-md-6 col-sm-10">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Category Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label" for="status">Status</label>
+                                <div class="col-md-6 col-sm-10">
+                                    <select name="status" id="status" class="form-control" required>
+                                        <option value="1">Active</option>
+                                        <option value="0">Deactive</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <input type="submit" value="submit" class="btn btn-primary">
+                        </form>
+                    </div>
+                </div>
+                <!-- Medicine Add stop here -->
+                <?php
+            }else{
+        ?>
         <!-- Medicine category start here  -->
         <div class="card">
             <div class="table-responsive">
@@ -53,6 +84,7 @@ require_once 'header.php';
             </div>
         </div>
         <!-- Medicine category stop here -->
+        <?php } ?>
     </div>
 </div>
 <?php
