@@ -75,6 +75,7 @@ require_once 'header.php';
                                             ?>
                                         </td>
                                         <td>
+                                            <a href="/admin/appointments-view.php?id=<?php echo $row['id']; ?>" class="btn btn-default btn-sm" title="View"><i class="fa fa-paperclip"></i></a>
                                             <a href="/admin/appointments-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-default btn-sm" title="Edit"><i class="fa fa-pencil"></i></a>
                                             <a href="/admin/appointments-delete.php?id=<?php echo $row['id']; ?>" class="btn btn-default btn-sm" title="Delete"><i class="fa fa-trash-o"></i></a>
                                         </td>
