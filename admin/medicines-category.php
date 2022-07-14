@@ -105,7 +105,7 @@ require_once 'header.php';
                                         </td>
                                         <td>
                                             <a href="/admin/medicines-category.php?update=1&id=<?php echo $row['id']; ?>" class="btn btn-default btn-sm" title="Edit"><i class="fa fa-pencil"></i></a>
-                                            <a href="/admin/medicines-category.php?delete=1&id=<?php echo $row['id']; ?>" class="btn btn-default btn-sm" title="Delete"><i class="fa fa-trash-o"></i></a>
+                                            <a href="confirm-medicines-delete-category.php?id=<?php echo $row['id']; ?>" class="btn btn-default btn-sm" title="Delete"><i class="fa fa-trash-o"></i></a>
                                         </td>
                                     </tr>
                                     <?php 
