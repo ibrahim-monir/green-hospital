@@ -20,6 +20,7 @@
 
 <!-- Project core js file minify with grunt --> 
 <script src="assets/bundles/mainscripts.bundle.js"></script>
+<script src="assets/js/repeater.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
