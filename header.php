@@ -38,7 +38,7 @@
         <div class="container custom-header">
             <div class="row align-items-center">
                 <div class="col-xl-3 col-lg-3">
-                    <a href="index.html" class="site-logo">
+                    <a href="/" class="site-logo">
                         <img src="assets/images/logo/logo.png" alt="">
                     </a>
                     <div class="mobile-menu"></div>
