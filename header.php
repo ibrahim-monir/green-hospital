@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body class="home page single">
 
     <!-- header start -->
     <header id="sticky-header" class="site-header">
