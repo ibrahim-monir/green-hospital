@@ -1,11 +1,3 @@
-/*
-    Theme Name: Medixer - Medical and Health HTML5 Template
-    Author: Authore Name
-    Support: mail@gmail.com
-    Description: Medical and Health HTML5 Template
-    Version: 1.0
-*/
-
 /* CSS Index
 -----------------------------------
 1. Theme default css
@@ -766,6 +758,18 @@ img {
 	background: #E3FCFF;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.frontpage .site-header nav#mobile-menu li a {
+    color: #003242;
+}
+
+.site-header nav#mobile-menu li a {
+    color: #fff;
+}
+
+.sticky-on nav#mobile-menu li a {
+    color: #000;
 }
 
 /* header-extra-info */
