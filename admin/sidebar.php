@@ -41,33 +41,52 @@
                         <li><a href="/admin/add-department.php">Add Departments</a></li>
                     </ul>
                 </li>
-                <li><a href="app-calendar.html"><i class="fa fa-calendar"></i> <span>Appointment</span></a></li>
+                <li>
+                    <a href="#Appoointments" class="has-arrow"><i class="fa fa-calendar"></i><span>Appointment</span></a>
+                    <ul>
+                        <li><a href="/admin/appointments.php">All Appointments</a></li>
+                        <li><a href="/admin/appointments-add.php">Add Appointment</a></li>
+                    </ul>
+                </li>
                 <!-- <li><a href="app-todo.html"><i class="fa fa-th-list"></i> <span>Todo List</span></a></li> -->
                 <li>
                     <a href="#Patients" class="has-arrow"><i class="fa fa-user-circle-o"></i><span>Patients</span></a>
                     <ul>
                         <li><a href="/admin/all-patients.php">All Patient</a></li>
                         <li><a href="/admin/patients-add.php">Add Patient</a></li>
-                        <li><a href="patients-profile.html">Patient Profile</a></li>
-                        <li><a href="patients-invoice.html">Patient Invoices</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#Room" class="has-arrow"><i class="fa fa-thumbs-up"></i><span>Room Allotment</span></a>
+                    <a href="#Room" class="has-arrow"><i class="fa fa-thumbs-up"></i><span>Bed Allotment</span></a>
                     <ul>
-                        <li><a href="room-allotment.html">Alloted Rooms</a></li>
-                        <li><a href="room-add.html">Add Allotment</a></li>
+                        <li><a href="bed-allotment.php">Alloted Beds</a></li>
+                        <li><a href="bed-allotment-add.php">Add Allotment</a></li>
+                        <li><a href="room.html">Add Bed Type</a></li>
                     </ul>
                 </li>
-                <!-- <li><a href="departments.html"><i class="fa fa-table"></i><span>Departments</span></a></li> -->
                 <li>
+                    <a href="#Prescription" class="has-arrow"><i class="fa fa-sticky-note-o"></i><span>Prescriptions</span></a>
+                    <ul>
+                        <li><a href="prescriptions.php">Prescriptions</a></li>
+                        <li><a href="prescriptions-add.php">Add Prescription</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Medicine" class="has-arrow"><i class="fa fa-medkit"></i><span>Medicines</span></a>
+                    <ul>
+                        <li><a href="medicines.php">Medicines</a></li>
+                        <li><a href="medicines-add.php">Add Medicine</a></li>
+                        <li><a href="medicines-category.php">Category</a></li>
+                    </ul>
+                </li>
+                <!-- <li>
                     <a href="#Payments" class="has-arrow"><i class="fa fa-cc-paypal"></i><span>Payments</span></a>
                     <ul>
                         <li><a href="payments.html">Payments</a></li>
                         <li><a href="payments-add.html">Add Payments</a></li>
                         <li><a href="payments-invoice.html">Invoice</a></li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- <li class="header">Admin</li>
                 <li><a href="app-inbox.html"><i class="fa fa-envelope"></i> <span>Email</span> <span class="badge badge-default mr-0">12</span></a></li>
                 <li><a href="app-chat.html"><i class="fa fa-comments"></i> <span>Chat</span></a></li>
