@@ -51,16 +51,16 @@
                                     <a href="/">Home</a>
                                 </li>
                                 <li>
-                                    <a href="departments.html">Department</a>
+                                    <a href="departments.php">Department</a>
                                 </li>
                                 <li>
-                                    <a href="services.html">Doctors</a>
+                                    <a href="doctors.php">Doctors</a>
                                 </li>
                                 <li>
                                     <a href="login.php">Appointment</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="contact.php">Contact</a>
                                 </li>
                             </ul>
                         </nav>
