@@ -21,7 +21,7 @@ require_once 'header.php';
                                         if($patientQuery){
                                             while($row = mysqli_fetch_assoc($patientQuery)){
                                                 ?>
-                                                <option value="<?php echo strtolower($row['id']); ?>">
+                                                <option value="<?php echo strtolower($row['id']); ?>" <?php if( $_SESSION["patient_id"] == $row["id"] ) echo "selected"; ?>>
                                                     <?php echo $row['full_name']; ?>
                                                 </option>
                                                 <?php
