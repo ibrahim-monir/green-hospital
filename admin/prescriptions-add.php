@@ -22,7 +22,7 @@
                                     <div class="col">
                                         <div class="form-group c_form_group">
                                             <label>appointment id <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text" name="appaointment_id" value="<?php echo isset($_REQUEST['appointment_id']); ?>" required>
+                                            <input class="form-control" type="text" name="appaointment_id" value="<?php if( isset( $_REQUEST['appointment_id'] ) ) echo $_REQUEST['appointment_id']; ?>" required>
                                         </div>
                                     </div>
                                 </div>
