@@ -1,5 +1,6 @@
 <?php 
     require_once 'conn.php';
+    $admin = ! empty( $_REQUEST['admin'] );
 ?>
 <!doctype html>
 <html lang="en">
@@ -41,6 +42,7 @@
                 </div>
                 <div class="body">
                     <form class="form-auth-small" action="auth.php" method="POST">
+                        <input type="hidden" name="admin" value="<?php if( 1 == !empty ($_REQUEST['admin'] ) ) echo '1'; ?>">
                         <div class="form-group c_form_group">
                             <label>Email</label>
                             <input type="email" class="form-control" name="email" placeholder="Enter your email address">
