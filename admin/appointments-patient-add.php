@@ -14,7 +14,7 @@ require_once 'header.php';
                         <div class="col-sm-6">
                             <div class="form-group c_form_group">
                                 <label id="patients">Patients<span class="text-danger">*</span></label>
-                                <select id="patients" class="form-control show-tick" name="patient_id">
+                                <select id="patients" class="form-control show-tick" name="patient_id" disabled>
                                     <?php
                                         $patient_sql = "SELECT * FROM patients";
                                         $patientQuery = mysqli_query( $conn, $patient_sql);
