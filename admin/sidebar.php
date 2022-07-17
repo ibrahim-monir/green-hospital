@@ -26,6 +26,9 @@
             <ul id="main-menu" class="metismenu animation-li-delay">
                 <li class="header">Hospital</li>
                 <li class="active"><a href="/admin"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                <?php
+                    if( 1 == isset( $_SESSION["admin"] ) ):
+                ?>
                 <li>
                     <a href="#Doctors" class="has-arrow"><i class="fa fa-user-md"></i><span>Doctors</span></a>
                     <ul>
@@ -34,6 +37,10 @@
                         <!-- <li><a href="dr-schedule.html">Doctors Schedule</a></li> -->
                     </ul>
                 </li>
+                <?php endif; ?>
+                <?php
+                    if( 1 == isset( $_SESSION["admin"] ) ):
+                ?>
                 <li>
                     <a href="#Departments" class="has-arrow"><i class="fa fa-list"></i><span>Departments</span></a>
                     <ul>
@@ -41,21 +48,40 @@
                         <li><a href="/admin/add-department.php">Add Departments</a></li>
                     </ul>
                 </li>
+                <?php endif; ?>
                 <li>
                     <a href="#Appoointments" class="has-arrow"><i class="fa fa-calendar"></i><span>Appointment</span></a>
                     <ul>
+                        <?php
+                            if( 1 == isset( $_SESSION["admin"] ) || 1 == isset ( $_SESSION["doctor"] ) ):
+                        ?>
                         <li><a href="/admin/appointments.php">All Appointments</a></li>
                         <li><a href="/admin/appointments-add.php">Add Appointment</a></li>
+                        <?php elseif( 1 == isset( $_SESSION["patient"]) ): ?>
+                        <li><a href="/admin/appointments-patients.php">View Appointment</a></li>
+                        <li><a href="/admin/appointments-patient-add.php">Add Appointment</a></li>
+                        <?php endif; ?>
                     </ul>
                 </li>
                 <!-- <li><a href="app-todo.html"><i class="fa fa-th-list"></i> <span>Todo List</span></a></li> -->
                 <li>
                     <a href="#Patients" class="has-arrow"><i class="fa fa-user-circle-o"></i><span>Patients</span></a>
                     <ul>
+                        <?php
+                            if( 1 == isset( $_SESSION["admin"] ) || 1 == isset( $_SESSION["doctor"]) ):
+                        ?>
                         <li><a href="/admin/all-patients.php">All Patient</a></li>
                         <li><a href="/admin/patients-add.php">Add Patient</a></li>
+                        <?php
+                            elseif( 1 == $_SESSION["patient"] ):
+                        ?>
+                        <li><a href="/admin/patients-view.php?id=<?php echo $_SESSION["patient_id"]; ?>">View Profile</a></li>
+                        <?php endif; ?>
                     </ul>
                 </li>
+                <?php
+                    if( 1 == isset( $_SESSION["admin"] ) || 1 == isset( $_SESSION["doctor"]) ):
+                ?>
                 <li>
                     <a href="#Room" class="has-arrow"><i class="fa fa-thumbs-up"></i><span>Bed Allotment</span></a>
                     <ul>
@@ -64,13 +90,23 @@
                         <li><a href="room.html">Add Bed Type</a></li>
                     </ul>
                 </li>
+                <?php endif; ?>
                 <li>
                     <a href="#Prescription" class="has-arrow"><i class="fa fa-sticky-note-o"></i><span>Prescriptions</span></a>
                     <ul>
+                        <?php
+                            if( 1 == isset( $_SESSION["admin"] ) || 1 == isset( $_SESSION["doctor"]) ):
+                        ?>
                         <li><a href="prescriptions.php">Prescriptions</a></li>
                         <li><a href="prescriptions-add.php">Add Prescription</a></li>
+                        <?php elseif( 1 == $_SESSION["patient"] ): ?> 
+                        <li><a href="prescriptions-patients.php">My Prescriptions</a></li>
+                        <?php endif; ?>
                     </ul>
                 </li>
+                <?php
+                    if( 1 == isset( $_SESSION["admin"] ) || 1 == isset( $_SESSION["doctor"]) ):
+                ?>
                 <li>
                     <a href="#Medicine" class="has-arrow"><i class="fa fa-medkit"></i><span>Medicines</span></a>
                     <ul>
@@ -79,38 +115,7 @@
                         <li><a href="medicines-category.php">Category</a></li>
                     </ul>
                 </li>
-                <!-- <li>
-                    <a href="#Payments" class="has-arrow"><i class="fa fa-cc-paypal"></i><span>Payments</span></a>
-                    <ul>
-                        <li><a href="payments.html">Payments</a></li>
-                        <li><a href="payments-add.html">Add Payments</a></li>
-                        <li><a href="payments-invoice.html">Invoice</a></li>
-                    </ul>
-                </li> -->
-                <!-- <li class="header">Admin</li>
-                <li><a href="app-inbox.html"><i class="fa fa-envelope"></i> <span>Email</span> <span class="badge badge-default mr-0">12</span></a></li>
-                <li><a href="app-chat.html"><i class="fa fa-comments"></i> <span>Chat</span></a></li>
-                <li><a href="our-staffs.html"><i class="fa fa-users"></i><span>Our Staffs</span></a></li>
-                <li><a href="app-contacts.html"><i class="fa fa-address-book"></i> <span>Contacts</span></a></li>
-                <li><a href="app-filemanager.html"><i class="fa fa-folder"></i> <span>File Manager</span></a></li>
-                <li><a href="our-centres.html"><i class="fa fa-map-marker"></i><span>Our Centres</span></a></li>
-                <li class="header">Social</li>
-                <li><a href="page-news.html"><i class="fa fa-globe"></i> <span>Blog</span></a></li>
-                <li><a href="page-social.html"><i class="fa fa-share-alt-square"></i> <span>Social</span></a></li>                        
-                <li class="extra_widget">
-                    <div class="form-group">
-                        <label class="d-block">Traffic this Month <span class="float-right">77%</span></label>
-                        <div class="progress progress-xxs">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="d-block">Server Load <span class="float-right">50%</span></label>
-                        <div class="progress progress-xxs">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
-                        </div>
-                    </div>
-                </li> -->
+                <?php endif; ?>
             </ul>
         </nav>     
     </div>
